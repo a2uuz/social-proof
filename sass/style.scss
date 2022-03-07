@@ -106,3 +106,32 @@ header{
     @include purple-cards();
     margin-bottom: 1rem;
 }
+
+@media (min-width: 500px){
+    body{
+        @include flex-center();
+        height: 100vh;
+    }
+    .top-side{
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    }
+
+  header {
+    grid-column: 1 / 2;
+    text-align: left;
+    // padding: 3rem;
+
+  }
+
+ main {
+    grid-column: 2 / 4;
+    margin-right: 15rem;
+  }
+
+  footer {
+    grid-column: 1 / 4;
+    display: flex;
+    gap: 1rem;
+}
+}
