@@ -24,6 +24,18 @@ body {
           align-items: center;
   font-family: "Spartan", sans-serif;
   font-size: 15px;
+  background: bottom/cover url("../images/bg-pattern-bottom-mobile.svg") no-repeat;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  width: 374px;
+  height: 232px;
+  top: 0;
+  left: -2rem;
+  background: center/cover url("../images/bg-pattern-top-mobile.svg") no-repeat;
+  z-index: -1;
 }
 
 body, #two-sides > * {
