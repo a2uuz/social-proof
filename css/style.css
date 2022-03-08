@@ -7,6 +7,7 @@
 }
 
 body {
+  position: relative;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,6 +136,16 @@ footer .testimonials .feedback {
             align-items: center;
     height: 100vh;
     margin: 0 2rem;
+    background: top/cover url("../images/bg-pattern-bottom-desktop.svg") no-repeat;
+  }
+  body::before {
+    content: '';
+    position: absolute;
+    width: 584px;
+    height: 362px;
+    top: 0;
+    left: -2rem;
+    background: center/cover url("../images/bg-pattern-top-desktop.svg") no-repeat;
   }
   #two-sides {
     display: -webkit-box;

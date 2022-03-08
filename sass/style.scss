@@ -26,11 +26,11 @@ $font:  'Spartan', sans-serif;
 }
 
 body {
+  position: relative;
   background-color: $White;
   @include flex-center();
   font-family: $font;
   font-size: 15px;
-  
 }
 
 body, #two-sides > *{
@@ -123,7 +123,19 @@ footer{
         @include flex-center();
         height: 100vh;
         margin: 0 2rem;
+      background: top/cover url('../images/bg-pattern-bottom-desktop.svg') no-repeat;
+
+            &::before{
+            content: '';
+            position: absolute;
+            width: 584px;
+            height: 362px;
+            top: 0;
+            left: -2rem;
+            background: center/cover url('../images/bg-pattern-top-desktop.svg') no-repeat;
+            }
     }
+
     #two-sides{
     display: flex;
     margin: 0 9rem;
